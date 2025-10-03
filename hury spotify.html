@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>spotify</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<style>
+  nav ul {
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+  }
+
+  nav li {
+    padding: 28px 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    color: white;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  li:hover {
+    color: #1ed760;
+    cursor: pointer;
+  }
+
+  a:visited {
+    color: red;
+  }
+
+  div~h1 {
+    color: blue;
+  }
+
+  header nav {
+    padding-left: 550px;
+  }
+
+  .module {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .menu:hover {
+    background-color: rgb(230, 219, 230);
+  }
+
+  summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 26px 28px;
+    margin-top: 2px;
+    position: relative;
+    list-style: none;
+    outline: none;
+  }
+
+  bar {
+    text-align: center;
+  }
+
+  object {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .container {
+    padding: 30px;
+    display: flex;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    height: 380px;
+    width: 100%;
+    border: 1px solid white;
+  }
+
+
+  #foot {
+    display: flex;
+  }
+
+  .foot1 {
+    padding: 30px;
+  }
+
+  .foot1 img {
+    width: 152px;
+    height: 60px;
+  }
+
+  .foot2 {
+    display: flex;
+    padding: 40px 30px;
+
+  }
+
+  .foot2 ul {
+    margin-left: 70px;
+  }
+
+  .foot2 ul li {
+    color: white;
+  }
+
+  .foot2 ul li:hover {
+    color: lime;
+    cursor: pointer;
+  }
+
+  .foot2 p {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(130, 134, 134);
+    padding-top: 10px;
+  }
+
+  .social-links {
+    color: black;
+    padding-top: 80px;
+    padding-right: 50px;
+  }
+
+  .foot {
+    padding: 40px 90px;
+  }
+
+  .foot p {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(130, 134, 134);
+  }
+
+  .foot ul {
+    display: flex;
+    padding-left: 5px;
+    list-style: none;
+  }
+
+  .foot li {
+    color: gray;
+    padding-left: 10px;
+  }
+
+  .foot li:hover {
+    cursor: pointer;
+    color: lime;
+  }
+
+
+
+
+  .f31 {
+    display: flex;
+ justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(130, 141, 141);
+
+  }
+
+  .f31 ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .f31 ul li {
+    color: white;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .f31 ul li:hover {
+    color: lime;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <div style="padding: 40px;"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwSDcPB5BiNYYBFYC9kcG8st464LzORMRsA&usqp=CAU"
+      width="152px" height="60px">
+    <nav>
+      <ul style="list-style-type: none;display:flex;">
+        <li>Premium</li>
+        <li>Support</li>
+        <li>Download</li>
+        <li>
+          <div style="width: 1px;height: 16px;background-color: white;"></div>
+        </li>
+        <li>Sign Up</li>
+        <li>Log in</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section
+      style="background: rgb(172,52,188);background:linear-gradient(90deg, rgba(172,52,188,1)0%,rgba(3, 3, 43, 0.693)20%,rgba(153,57,169,1)62%,rgba(185,27,143,1)100%);height: 600px;">
+      <div style="display: flex;">
+        <div style="padding-left: 150px;padding-top:90px">
+          <img src="spotify.png" width="280px" height="510px"
+            style="border-top-left-radius:30px;border-top-right-radius: 30px;">
+        </div>
+        <div style="padding: 140px;">
+          <h1 style="font-size: 55px;font-weight:900 ;color: white;">Play millions of songs and podcasts, for free.</h1>
+          <div style="padding-left: 150px;padding-top: 10px;">
+            <div style="width:210px;height: 55px;background-color: white;color: black;border-radius: 500px;"
+              class="spotify.btn">
+              <p
+                style="padding-left: 20px;padding-bottom: 5px;font-weight: 650;font-size:14px;font-family: Arial, Helvetica, sans-serif;">
+              </p>
+              <span style="padding-left: 40px;">
+                <b>GET SPOTIFY FREE</b>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <article style="background-color: white;padding-left: 100px;">
+      <div style="padding: 20px;padding-top: 40px;">
+        <h1 class="module" style="text-align: center;">Why Spotify?</h1>
+      </div>
+      <ul class="padding:10px;" style="list-style-type: none;display: flex;">
+        <li style="padding-right: 20px;color: black;">
+          <img src="https://i.scdn.co/image/ab671c3d0000f430678067184805befd38aa0f57" width="142px" height="142px">
+          <div class="summary">
+            <h5>Your favorites</h5>
+            <p style="font-family: Arial, Helvetica, sans-serif;">Listen to the songs you love, and discover new music
+              and podcasts.</p>
+        </li>
+        </div>
+        <div>
+          <li style="padding-right: 20px;font-family: Arial, Helvetica, sans-serif;color: black;margin-left: 100px;">
+            <img src="https://i.scdn.co/image/ab671c3d0000f430a6f822749d5c25c32ee31d66" width="142px" height="142px">
+            <div class="summary">
+              <h5>Playlists made easy</h5>
+              <p style="font-family: Arial, Helvetica, sans-serif;">We'll help you make playlists. Or enjoy playlists
+                made by music experts.</p>
+          </li>
+        </div>
+        </div>
+        <div>
+          <li style="padding-right: 20px;color:black;margin-left: 100px;">
+            <img src="https://i.scdn.co/image/ab671c3d0000f430eb43023b5332389f5094530d" width="142px" height="142px">
+            <div class="summary">
+              <h5>Make it yours</h5>
+              <p style="font-family: Arial, Helvetica, sans-serif;">Tell us what you like, and we'll recommend music for
+                you.</p>
+          </li>
+        </div>
+        </div>
+        <li style="padding-right: 20px;color: black;margin-left: 80px;">
+          <img src="https://i.scdn.co/image/ab671c3d0000f4309430062bc28461dc8fbde6bc" width="132px" height="142px">
+          <div class="summary">
+            <h5>Save mobile data.</h5>
+            <p style="font-family:Arial, Helvetica, sans-serif ;">To use less data when you play music, turn on Data
+              Saver in Settings.</p>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </article>
+  </main>
+  <div style="background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);padding:250px;">
+    <div class="bar">
+      <h2
+        style="font-family: Arial, Helvetica, sans-serif;color: white;font-size: 48px;font-weight: 700;text-align: center;">
+        It's free.</h2>
+    </div>
+    <div class="bar">
+      <h2
+        style="font-family: Arial, Helvetica, sans-serif;color: white;font-size: 48px;font-weight: 700;text-align: center;">
+        No credit card required.</h2>
+    </div>
+  </div>
+  <div class="menu"></div>
+  <div style="background-color: white;padding:100px;">
+    <div class="accordion" id="accordionExample" style="width: 90%px">
+      <h2
+        style="font-family: Arial, Helvetica, sans-serif;color:black;font-size: 34px; font-weight: 900;text-align: center;padding-bottom: 50px;">
+        Got Questions?</h2>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            <strong><u>How do I create a playlist?</u></strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div>
+              Playlists are a great way to save collections of music,either for your own listening or to share
+              To create one:
+              1.Tap Your Library.
+              2.Tap CREATE.
+              3.Give your playlist a name.
+              4.Start adding songs(and we'll help you along).
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong><u>How do I activate Data Saver mode?</u></strong>>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div>
+              1. Tap Home.
+              2. Tap Settings.
+              3. Tap Data Saver.
+              4. Switch on Data Saver.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong><u>Is it only possible to shuffle play music?</u></strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div>
+              Any playlist with the shuffle icon will play on shuffle.
+
+              Some playlists won't have the shuffle icon, so you can tap any song to play it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+            <strong><u> Where can I find Podcasts?</u></strog>
+          </button>
+        </h2>
+        <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Tap Search. Under Browse All, tap Podcasts.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div
+    style="background: rgb(172,52,188);background:linear-gradient(90deg, rgba(172,52,188,1)0%,rgba(17,17,169,0.6934232311088497)20%,rgba(153,57,169,1)62%,rgba(185,27,143,1)100%);height: 600px;">
+    <div style="padding: 200px;">
+      <h1 style="color: white;font-size: 55px;font-weight: 900;padding-left: 200px;">Ready? Let's Play.</h1>
+      <div style="padding-left: 250px;padding-top: 10px;">
+        <div style="width:210px;height: 55px;background-color: white;color: black;border-radius: 500px;"
+          class="spotify.btn">
+          <p
+            style="padding-left: 20px;padding-bottom: 5px;font-weight: 650;font-size:14px;font-family: Arial, Helvetica, sans-serif;">
+          </p>
+          <span style="padding-left: 40px;">
+            <b>GET SPOTIFY FREE</b>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div id="foot">
+        <div class="foot1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwSDcPB5BiNYYBFYC9kcG8st464LzORMRsA&usqp=CAU"
+            alt="">
+        </div>
+        <div class="foot2">
+          <ul style="list-style-type: none;padding:0px;text-align: left;display: list-item;">
+            <p> COMPANY</p>
+            <li>About</li>
+            <li>Jobs</li>
+            <li> FAQ</li>
+            <li>For the Record</li>
+          </ul>
+        </div>
+        <div class="foot2">
+          <ul style="list-style-type: none;padding:0px;display: list-item;">
+            <p>COMMUNITIES</p>
+            <li>For Artists</li>
+            <li>Developers</li>
+            <li>Advertising</li>
+            <li>Investors</li>
+            <li>Vendors</li>
+            <li>Spotify for Work</li>
+          </ul>
+        </div>
+        <div class="foot2">
+          <ul style="list-style-type: none;padding:0px;display: list-item;">
+            <p>USEFUL LINKS</p>
+            <li>Support</li>
+            <li>Web Player</li>
+            <li>Careers</li>
+            <li>Free Mobile App</li>
+          </ul>
+        </div>
+        <div class="foot">
+          <p>follow us</p>
+          <ul>
+            <li><i class="fab fa-facebook" style="font-size: 25px;"></i></li>
+            <li><i class="fab fa-twitter" style="font-size: 25px;"></i></li>
+            <li><i class="fab fa-instagram" style="font-size: 25px;"></i></li>
+          </ul>
+        </div>
+      </div>
+        <div class="f31">
+          <ul>
+            <li>India (English)</li>
+
+            <li>Legal</li>
+            <li>Privacy Center</li>
+            <li>Privacy POlicy</li>
+            <li>About Ads</li>
+            <li>Accessibility</li>
+            <li>© 2023 Spotify AB</li>
+          </ul>
+            </div>
+    </footer>
+
+</body>
+
+</html>
